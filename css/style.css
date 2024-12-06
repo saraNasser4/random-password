@@ -1,0 +1,88 @@
+* {
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #002339;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 600px; 
+}
+
+.text {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.text p:last-child {
+    color:#66fcf1;
+}
+.text p:last-child::before {
+    content: '';
+    position: absolute;
+    width: 290px;
+    bottom: -5px;
+    border-top: 3px solid #66fcf1;
+}
+
+
+.user-input {
+    position: relative;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-input > input {
+    padding: 15px;
+    width: 400px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.user-input > input:focus {
+    background-color: #d3d3d3;
+    color: #0b0c10;
+}
+
+.user-input > i {
+    position: absolute;
+    font-size: 25px;
+    background-color: transparent;
+    color:#66fcf1;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.main-btn {
+    display: flex;
+    align-items: center;
+    background-color: #66fcf1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.main-btn:hover {
+    border: 1px solid #66fcf1;
+    background-color: transparent;
+    color:#66fcf1
+}
+
+.main-btn > i {
+    padding-right: 10px;
+}
